@@ -25,12 +25,11 @@ public class HelloWorld {
         // System.out.println("Thorp in middle HelloWorld!");
         // Thread.sleep(20000);
         // System.out.println("Thorp in middle second HelloWorld!");
-        // Thread.sleep(20000);
-        // System.out.println("Thorp done HelloWorld!");
         //
         Map<String, String> env = System.getenv();
         System.out.println(env.get("JAVA_HOME"));
         System.out.println(env.get("BLA"));
+        System.out.println(env.get("PATH"));
         System.out.println(args[0]);
         System.out.println(args[1]);
         // for (String envName : env.keySet()) {
@@ -38,6 +37,8 @@ public class HelloWorld {
         //                       envName,
         //                       env.get(envName));
         // }
+        Thread.sleep(20000);
+        System.out.println("Thorp done HelloWorld!");
 
 
     }

@@ -1,5 +1,5 @@
-FROM java:7
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN javac HelloWorld.java
-CMD ["java", "HelloWorld"]
+FROM java:8
+ADD thorp.jar .
+WORKDIR .
+ENTRYPOINT ["java","-jar","thorp.jar"]
+CMD [""]
